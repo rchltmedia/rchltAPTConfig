@@ -2,4 +2,6 @@
 APT configuration files for Ubuntu &amp; Debian (and it's derivatives)
 
 ## what is this exactly?
-not much information for now. i'll figure this out later.
+in case of i reinstalling linux systems, i only need this for restoring everything to former glory. this repository stores every change to package manager mainly from Debian APT.
+
+## 
