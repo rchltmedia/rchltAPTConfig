@@ -1,0 +1,34 @@
+deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian trixie-backports-sloppy main contrib non-free non-free-firmware
+
+deb http://deb.debian.org/debian forky main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian forky-updates main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian forky-backports main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian sid main contrib non-free non-free-firmware
+# deb http://deb.debian.org/debian experimental main contrib non-free non-free-firmware
+
+deb http://incoming.debian.org/debian-buildd buildd-sid main non-free-firmware
+deb http://incoming.debian.org/debian-buildd buildd-forky-backports main non-free-firmware
+
+## Debug Symbols
+deb http://deb.debian.org/debian-debug sid-debug main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian-debug forky-backports-debug main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian-debug forky-debug main contrib non-free non-free-firmware
+
+deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware
+deb http://security.debian.org/debian-security/ forky-security main contrib non-free non-free-firmware
+
+deb http://fastly.linuxmint.io/ gigi main upstream import backport
+deb https://mxrepo.com/mx/repo trixie main non-free ahs
+deb http://deb-multimedia.org/ sid main non-free
+deb [signed-by=/usr/share/keyrings/mozilla-apt-keyring.gpg] https://packages.mozilla.org/apt mozilla main
+
+deb http://archive.ubuntu.com/ubuntu resolute main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu resolute-updates main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu resolute-backports main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu resolute-security main restricted universe multiverse
+
+deb https://liquorix.net/siduction/fixes unstable main non-free-firmware
+deb https://liquorix.net/siduction/extra unstable main non-free-firmware
