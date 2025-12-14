@@ -1,0 +1,81 @@
+# Brave Browser
+deb [trusted=yes signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main
+
+#Linux Mint
+deb [trusted=yes] http://fastly.linuxmint.io/ gigi main upstream import backport
+
+#Endless OS
+deb [trusted=yes arch=amd64] http://deb.endlessos.org/debian/ master core endless
+
+#MX Linux
+deb [trusted=yes] http://mxrepo.com/mx/repo/ bookworm main non-free ahs ahs-staging
+deb [trusted=yes] http://liquorix.net/debian/ bookworm main
+
+#Purism
+deb [trusted=yes] http://repo.pureos.net/pureos/ dawn main
+deb [trusted=yes] http://repo.pureos.net/pureos/ dawn-updates main
+deb [trusted=yes] http://repo.pureos.net/pureos/ dawn-security main
+deb [trusted=yes] http://repo.pureos.net/pureos/ dawn-updates-proposed main
+deb [trusted=yes] http://repo.pureos.net/pureos-debug/ dawn-debug main
+
+#Kali
+deb [trusted=yes] http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
+deb [trusted=yes] http://http.kali.org/kali kali-experimental main contrib non-free non-free-firmware
+deb [trusted=yes] http://http.kali.org/kali kali-dev main contrib non-free non-free-firmware
+deb [trusted=yes] http://http.kali.org/kali kali-debian-picks main contrib non-free non-free-firmware
+deb [trusted=yes] http://http.kali.org/kali kali-bleeding-edge main contrib non-free non-free-firmware
+
+#SIDuction
+deb [trusted=yes] https://liquorix.net/siduction/fixes unstable main non-free-firmware
+deb [trusted=yes] https://liquorix.net/siduction/extra unstable main non-free-firmware
+
+#DEVUAN
+deb [trusted=yes] http://deb.devuan.org/merged excalibur main non-free-firmware
+deb [trusted=yes] http://deb.devuan.org/merged excalibur-updates main non-free-firmware
+deb [trusted=yes] http://deb.devuan.org/merged excalibur-security main non-free-firmware
+deb [trusted=yes] http://deb.devuan.org/merged excalibur-proposed-updates main non-free-firmware
+deb [trusted=yes] http://deb.devuan.org/merged excalibur-backports main non-free-firmware
+
+# maemo-leste
+deb [trusted=yes] https://maedevu.maemo.org/leste daedalus main contrib non-free
+deb [trusted=yes] https://maedevu.maemo.org/extras daedalus main contrib non-free
+deb https://git.maemo.org/api/packages/leste-extras/debian daedalus main
+
+# AntiX SysVinit
+deb [trusted=yes] http://la.mxrepo.com/antix/bookworm/ bookworm main nonfree nosystemd  
+deb [trusted=yes] http://la.mxrepo.com/antix/testing testing main nosystemd nonfree 
+deb [trusted=yes] http://la.mxrepo.com/antix/sid sid main nosystemd nonfree 
+
+# Ubuntu Territory. do not use in debian.
+sudo add-apt-repository ppa:mozillateam/ppa
+sudo add-apt-repository ppa:elementary-os/stable
+sudo add-apt-repository ppa:zorinos/stable ppa:zorinos/patches ppa:zorinos/apps ppa:zorinos/driver
+
+# Linux Mint (Ubuntu)
+deb [trusted=yes] http://fastly.linuxmint.io/ zena main upstream import backport
+
+# Zorin OS
+deb [trusted=yes] https://packages.zorinos.com/stable noble main
+deb [trusted=yes] https://packages.zorinos.com/patches noble main
+deb [trusted=yes] https://packages.zorinos.com/apps noble main
+deb [trusted=yes] https://packages.zorinos.com/drivers noble main restricted
+
+#POP_os
+deb [trusted=yes] http://apt.pop-os.org/proprietary noble main
+deb [trusted=yes] http://apt.pop-os.org/release noble main
+deb [trusted=yes] http://apt.pop-os.org/release-ubuntu noble main
+deb [trusted=yes] http://apt.pop-os.org/staging-proprietary noble main
+deb [trusted=yes] http://apt.pop-os.org/staging-ubuntu/master noble main
+deb [trusted=yes] http://apt.pop-os.org/staging/master noble main
+
+# Flatpaks. use sudo flatpak remote-add. best using Warehouse (https://flathub.org/en/apps/io.github.flattool.Warehouse)
+flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+fedora oci+https://registry.fedoraproject.org
+elementaryos https://flatpak.elementary.io/repo.flatpakrepo
+flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+eclipse-nightly https://download.eclipse.org/linuxtools/flatpak-I-builds/eclipse.flatpakrepo
+webkit-sdk https://software.igalia.com/flatpak-refs/webkit-sdk.flatpakrepo
+
+# for endless os, copy the whole script
+sudo wget https://origin.ostree.endlessm.com/keys/eos-flatpak-keyring.gpg && flatpak remote-add --gpg-import=eos-flatpak-keyring.gpg eos-apps https://ostree.endlessm.com/ostree/eos-apps && flatpak remote-add --gpg-import=eos-flatpak-keyring.gpg eos-sdk https://ostree.endlessm.com/ostree/eos-sdk
