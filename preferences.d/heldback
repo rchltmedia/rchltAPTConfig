@@ -1,0 +1,34 @@
+Package: *
+Pin: release o=Debian
+Pin-Priority: 700
+
+Package: *
+Pin: release o=Debian Backports
+Pin-Priority: 600
+
+# from deb-multimedia to provide more bleeding edge multimedia apps builds.
+Package: *
+Pin: release o=Unofficial Multimedia Packages
+Pin-Priority: 700
+
+# Choosing LTS kernel instead of mainline since this runs in old computers.
+Package: linux-image-amd64 linux-headers-amd64 linux-image-amd64-signed-template
+Pin: release n=trixie
+Pin-Priority: 800
+
+# some packages in MX Linux repo conflicts with Linux Mint repo.
+Package: circle-flags-svg hypnotix
+Pin: release o=linuxmint
+Pin-Priority: 700
+
+Package: *
+Pin: release o=ubuntu
+Pin-Priority: -10
+
+Package: yaru-cinnamon-* libreoffice-style-yaru adium-theme-ubuntu ubuntu-mono light-themes humanity-icon-theme ubuntu-artwork ubuntu*-wallpapers*
+Pin: release o=ubuntu
+Pin-Priority: 700
+
+Package: ubuntu-keyring
+Pin: release o=ubuntu,n=resolute
+Pin-Priority: 800
