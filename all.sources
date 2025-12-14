@@ -1,0 +1,150 @@
+## Official Repo
+
+# Unstable
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://deb.debian.org/debian
+Suites: sid
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# Testing-Forky
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://deb.debian.org/debian
+Suites: forky
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://deb.debian.org/debian
+Suites: forky-updates
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://deb.debian.org/debian
+Suites: forky-backports
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# Stable-Trixie
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://deb.debian.org/debian
+Suites: trixie
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://deb.debian.org/debian
+Suites: trixie-updates
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://deb.debian.org/debian
+Suites: trixie-backports
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://deb.debian.org/debian
+Suites: trixie-backports-sloppy
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://deb.debian.org/debian
+Suites: experimental
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://security.debian.org/debian-security/
+Suites: trixie-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://security.debian.org/debian-security
+Suites: forky-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+## foreign repo
+
+# Multimedia
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://deb-multimedia.org/
+Suites: sid
+Components: main non-free
+Signed-By: /usr/share/keyrings/deb-multimedia-keyring.gpg
+
+# Mozilla Firefox
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://packages.mozilla.org/apt
+Suites: mozilla
+Components: main
+Signed-By: /usr/share/keyrings/mozilla-apt-keyring.gpg
+
+# Librewolf Firefox
+Enabled: no
+Trusted: yes
+Types: deb
+URIs: http://repo.librewolf.net/
+Suites: librewolf
+Components: main
+Signed-By: /var/lib/extrepo/keys/librewolf.asc
+
+# Google forsaken Chrome
+Enabled: no
+Trusted: yes
+Types: deb
+URIs: https://dl.google.com/linux/chrome/deb/
+Suites: stable
+Components: main
+#Signed-By: /var/lib/extrepo/keys/librewolf.asc
+
+## From other Distros
+
+# Linux Mint
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://fastly.linuxmint.io/
+Suites: gigi
+Components: main upstream backport import
+Signed-By: /usr/share/keyrings/linuxmint-keyring.gpg
+
+# MX Linux/antix
+Enabled: yes
+Trusted: yes
+Types: deb
+URIs: http://mxrepo.org/mx/repo
+Suites: trixie
+Components: main ahs non-free
+Signed-By: /usr/share/keyrings/mx-25-archive-keyring.gpg
